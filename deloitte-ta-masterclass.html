@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deloitte MBA HR – Talent Acquisition Interview Masterclass</title>
+<style>
+:root{--g:#86BC25;--gd:#5e8a12;--bg:#f6f7f4;--card:#fff;--tx:#16181a;--mu:#5d6368;--bd:#e1e4dc;--hl:#eef6dc;--sh:0 2px 10px rgba(0,0,0,.06)}
+[data-theme=dark]{--bg:#101214;--card:#1a1d20;--tx:#eceeea;--mu:#9aa1a6;--bd:#2c3135;--hl:#22301009;--sh:0 2px 10px rgba(0,0,0,.4)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx);line-height:1.65}
+header{position:sticky;top:0;z-index:50;background:#0b0c0d;color:#fff;display:flex;align-items:center;gap:12px;padding:10px 16px;border-bottom:3px solid var(--g)}
+header h1{font-size:1rem;margin:0;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+header h1 span{color:var(--g)}
+.btn{background:var(--g);color:#000;border:0;border-radius:8px;padding:8px 14px;font-weight:600;cursor:pointer;font-size:.85rem}
+.btn.ghost{background:transparent;color:inherit;border:1px solid var(--bd)}
+#menuBtn{display:none}
+#prog{position:fixed;top:0;left:0;height:3px;background:var(--g);width:0;z-index:99}
+.layout{display:flex;max-width:1400px;margin:0 auto}
+nav#side{width:270px;flex-shrink:0;position:sticky;top:58px;align-self:flex-start;height:calc(100vh - 58px);overflow:auto;padding:18px 12px;border-right:1px solid var(--bd)}
+nav#side a{display:block;padding:8px 12px;border-radius:8px;color:var(--tx);text-decoration:none;font-size:.9rem;margin-bottom:2px}
+nav#side a:hover,nav#side a.on{background:var(--g);color:#000;font-weight:600}
+main{flex:1;min-width:0;padding:24px clamp(14px,3vw,40px) 80px}
+section{margin-bottom:56px}
+h2{font-size:1.7rem;margin:0 0 6px;border-left:6px solid var(--g);padding-left:12px}
+h3{margin:22px 0 8px;font-size:1.15rem}
+.sub{color:var(--mu);margin:0 0 18px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px;box-shadow:var(--sh)}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.tag{display:inline-block;background:var(--g);color:#000;font-size:.72rem;font-weight:700;padding:2px 9px;border-radius:99px;margin-right:6px}
+.tag.o{background:transparent;border:1px solid var(--g);color:var(--gd)}
+.hero{background:linear-gradient(135deg,#0b0c0d,#1f2a0e);color:#fff;border-radius:18px;padding:34px clamp(18px,4vw,44px);margin-bottom:30px}
+.hero h1{font-size:clamp(1.6rem,4vw,2.6rem);margin:0 0 10px}.hero h1 span{color:var(--g)}
+.hero p{color:#cfd4c8;max-width:720px}
+.stats{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+.stats div{background:#ffffff14;border-radius:12px;padding:10px 18px}.stats b{display:block;font-size:1.5rem;color:var(--g)}
+details{background:var(--card);border:1px solid var(--bd);border-radius:12px;margin-bottom:10px;box-shadow:var(--sh)}
+summary{cursor:pointer;padding:14px 16px;font-weight:600;list-style:none;display:flex;gap:10px;align-items:flex-start}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"＋";color:var(--g);font-weight:800;flex-shrink:0}
+details[open]>summary::before{content:"－"}
+details[open]>summary{border-bottom:1px solid var(--bd)}
+.body{padding:14px 18px}
+.body ul,.body ol{padding-left:22px;margin:6px 0}
+.assess{background:var(--hl);border-left:4px solid var(--g);padding:8px 12px;border-radius:6px;margin-bottom:10px;font-size:.9rem}
+.tip{background:#fff7e0;color:#4a3a00;border-left:4px solid #e0a800;padding:8px 12px;border-radius:6px;margin:10px 0;font-size:.9rem}
+.tblwrap{overflow-x:auto;border-radius:12px;border:1px solid var(--bd)}
+table{border-collapse:collapse;width:100%;min-width:700px;background:var(--card)}
+th{background:#0b0c0d;color:var(--g);text-align:left;padding:10px;font-size:.85rem}
+td{padding:10px;border-top:1px solid var(--bd);vertical-align:top;font-size:.88rem}
+code,.mono{font-family:ui-monospace,Consolas,monospace;background:var(--hl);padding:2px 6px;border-radius:5px;font-size:.85em;word-break:break-word}
+pre{background:#0b0c0d;color:#d6f29b;padding:14px;border-radius:10px;overflow-x:auto;font-size:.82rem;white-space:pre-wrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.chip{border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:99px;padding:6px 14px;cursor:pointer;font-size:.82rem}
+.chip.on{background:var(--g);color:#000;border-color:var(--g);font-weight:700}
+input[type=search],input[type=number]{width:100%;padding:11px 14px;border-radius:10px;border:1px solid var(--bd);background:var(--card);color:var(--tx);font-size:.95rem}
+.calc label{display:block;font-size:.82rem;color:var(--mu);margin-top:10px}
+.res{margin-top:12px;padding:12px;border-radius:10px;background:var(--hl);font-weight:600}
+.steps{counter-reset:s;list-style:none;padding:0}
+.steps li{counter-increment:s;position:relative;padding:8px 0 8px 44px}
+.steps li::before{content:counter(s);position:absolute;left:0;top:6px;width:30px;height:30px;border-radius:50%;background:var(--g);color:#000;font-weight:800;display:grid;place-items:center}
+.chk label{display:flex;gap:10px;padding:8px 0;border-bottom:1px dashed var(--bd);cursor:pointer}
+.chk input{accent-color:var(--g);width:18px;height:18px;flex-shrink:0;margin-top:4px}
+.bar{height:10px;background:var(--bd);border-radius:9px;overflow:hidden;margin:8px 0}.bar i{display:block;height:100%;background:var(--g);width:0;transition:width .3s}
+footer{text-align:center;color:var(--mu);padding:30px 14px;font-size:.85rem}
+#top{position:fixed;right:16px;bottom:16px;width:44px;height:44px;border-radius:50%;border:0;background:var(--g);font-size:1.2rem;cursor:pointer;display:none;box-shadow:var(--sh)}
+@media(max-width:900px){
+ #menuBtn{display:inline-block}
+ nav#side{position:fixed;left:0;top:58px;z-index:40;background:var(--bg);transform:translateX(-100%);transition:.25s;width:80%;max-width:300px;box-shadow:var(--sh)}
+ nav#side.open{transform:none}
+}
+@media print{header,nav#side,#top,.chips,input{display:none!important}details{break-inside:avoid}details>*{display:block!important}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<header>
+ <button class="btn ghost" id="menuBtn" style="color:#fff" aria-label="Menu">☰</button>
+ <h1><span>Deloitte</span> · MBA HR · Talent Acquisition Masterclass</h1>
+ <button class="btn ghost" id="theme" style="color:#fff">🌓</button>
+ <button class="btn" onclick="window.print()">Print</button>
+</header>
+
+<div class="layout">
+<nav id="side">
+ <a href="#home">🏠 Overview</a>
+ <a href="#m1">1 · Deloitte &amp; TA Ecosystem</a>
+ <a href="#m2">2 · TA Syllabus (End-to-End)</a>
+ <a href="#m3">3 · Metrics &amp; Calculators</a>
+ <a href="#m4">4 · Question Bank</a>
+ <a href="#m5">5 · Case Scenarios</a>
+ <a href="#m6">6 · Ask Back &amp; Checklist</a>
+ <a href="#m7">7 · Frameworks &amp; Quick Revision</a>
+ <a href="#m8">8 · 7-Day Study Plan</a>
+</nav>
+
+<main>
+<section id="home">
+ <div class="hero">
+  <h1>Crack the <span>Deloitte</span> Talent Acquisition Interview</h1>
+  <p>A structured, in-depth prep kit for MBA HR candidates: business context, full TA syllabus, metrics, model answers, case scenarios, frameworks and a study plan.</p>
+  <div class="stats"><div><b id="qc">0</b>Questions</div><div><b id="sc">0</b>Scenarios</div><div><b>6+</b>Modules</div><div><b>3</b>Calculators</div></div>
+ </div>
+ <div class="grid">
+  <div class="card"><span class="tag">How to use</span><p>Work through modules 1–3 for knowledge, practise aloud with Module 4 and 5, then finish with the checklist and study plan.</p></div>
+  <div class="card"><span class="tag">Interview rounds</span><p>Typically: HR/TA screening → Manager round (domain + scenarios) → Director/Partner round (strategy + culture fit). Rounds vary by entity and hiring year.</p></div>
+  <div class="card"><span class="tag">Golden rule</span><p>Be structured, data-led and consultative. Show you are a <b>talent advisor</b>, not an order-taker.</p></div>
+ </div>
+ <div class="tip">Numbers like benchmarks, bands and conversion ratios in this guide are illustrative preparation figures, not official Deloitte data. Verify the firm's current practices and the role's JD before your interview.</div>
+</section>
+
+<section id="m1">
+ <h2>Module 1 · Deloitte's Business &amp; TA Ecosystem</h2>
+ <p class="sub">Know exactly which entity and vertical you're interviewing for. TA here is a strategic business partner, not back-office support.</p>
+ <h3>1.1 Deloitte India vs Deloitte USI</h3>
+ <div class="grid">
+  <div class="card"><span class="tag">Deloitte India (DI)</span><ul><li>Domestic clients: government, public sector, Indian enterprises</li><li>Hiring volume moves with domestic project wins</li><li>Needs knowledge of Indian statutory compliance, campus tiers, local compensation benchmarks</li></ul></div>
+  <div class="card"><span class="tag">Deloitte USI</span><ul><li>Extension of Deloitte US member firms (consulting, tax, audit, advisory)</li><li>Massive scale and niche global tech skills</li><li>Cross-border stakeholders, standardised global recruiting tech</li></ul></div>
+ </div>
+ <h3>1.2 Service lines you will recruit for</h3>
+ <div class="grid">
+  <div class="card"><b>Consulting</b><p>Strategy &amp; Analytics, Core Business Operations, Human Capital, Enterprise Technology &amp; Performance (SAP, Oracle, Cloud, AI).</p></div>
+  <div class="card"><b>Risk &amp; Financial Advisory</b><p>Cyber Risk, Forensic, M&amp;A Transaction Services, Regulatory &amp; Operational Risk.</p></div>
+  <div class="card"><b>Tax</b><p>International Tax, Transfer Pricing, Global Employer Services, Indirect Tax.</p></div>
+  <div class="card"><b>Audit &amp; Assurance</b><p>Statutory Audit, Internal Controls, Accounting &amp; Reporting Advisory.</p></div>
+ </div>
+ <h3>1.3 Shared Values → How to show cultural fit</h3>
+ <div class="tblwrap"><table><tr><th>Value</th><th>TA Meaning</th><th>Interview Proof Point</th></tr>
+ <tr><td><b>Lead the way</b></td><td>AI-driven sourcing, predictive analytics, employer branding</td><td>A time you adopted a tool/process improvement</td></tr>
+ <tr><td><b>Serve with integrity</b></td><td>Fair evaluation, BGV adherence, transparent pay talks</td><td>A time you refused a shortcut or flagged a discrepancy</td></tr>
+ <tr><td><b>Take care of each other</b></td><td>Candidate experience, inclusive hiring, recruiter–HM collaboration</td><td>A time you went out of your way for a candidate or teammate</td></tr>
+ <tr><td><b>Foster inclusion</b></td><td>DEI: gender, neurodiversity, LGBTQIA+, veterans, returnees</td><td>A time you widened a pool or removed bias</td></tr>
+ <tr><td><b>Collaborate for measurable impact</b></td><td>Use metrics to prove ROI to Partners</td><td>A project with quantified results</td></tr></table></div>
+</section>
+
+<section id="m2">
+ <h2>Module 2 · End-to-End Talent Acquisition Syllabus</h2>
+ <p class="sub">Tap each topic to expand.</p>
+ <details open><summary>2.1 Strategic Workforce Planning &amp; Requisition Management</summary><div class="body">
+  <b>Demand forecasting:</b> convert project pipeline (RFP wins, bench strength, attrition projections) into requisitions.
+  <h3>Buy vs Build vs Borrow</h3>
+  <ul><li><b>Buy:</b> lateral hiring for immediate deployment</li><li><b>Build:</b> campus hiring (Tier-1/2 B-schools, engineering colleges) and internal upskilling</li><li><b>Borrow:</b> contingent workforce, contractors, internal mobility / bench deployment</li></ul>
+  <h3>Job intake strategy (30-minute call)</h3>
+  <ul><li>Must-have vs good-to-have skills</li><li>Target competitor firms (Big 4, Tier-1 IT services, boutiques)</li><li>Deal-breakers, billing/project start timelines, panel availability</li><li>Compensation range, location/work mode, headcount phasing</li></ul>
+  <div class="tip"><b>Add-on:</b> Close every intake by agreeing on an SLA — profiles within X days, feedback within 48 hours — and document it in an intake sheet.</div>
+ </div></details>
+
+ <details><summary>2.2 Sourcing Strategies &amp; Talent Intelligence</summary><div class="body">
+  <b>Active vs passive:</b> job boards (Naukri, LinkedIn Recruiter, IIMJobs) for active candidates; talent mapping, GitHub, Kaggle, alumni networks for passive talent.
+  <h3>Boolean operators</h3>
+  <p><code>AND</code> <code>OR</code> <code>NOT</code> <code>"quotes"</code> <code>( )</code> <code>*</code></p>
+  <b>Workday HCM Consultant:</b>
+  <pre>("Workday" AND "HCM") AND ("Implementation" OR "Configuration" OR "Core HR") AND ("Consultant" OR "Lead" OR "Senior Analyst") NOT ("Recruiter" OR "Sales" OR "Bench")</pre>
+  <b>X-Ray (Google):</b>
+  <pre>site:linkedin.com/in/ ("SAP S/4HANA" OR "SAP FICO") AND ("Deloitte" OR "EY" OR "PwC" OR "KPMG") AND "Mumbai"</pre>
+  <b>Bonus: Cyber Risk (GRC) string</b>
+  <pre>("cyber" OR "information security") AND ("GRC" OR "ISO 27001" OR "NIST") AND ("Manager" OR "Senior Consultant") NOT ("intern" OR "trainee")</pre>
+  <b>Channel effectiveness:</b> Employee referrals (often highest conversion and retention), career portal, RPO vendors, niche hackathons.
+ </div></details>
+
+ <details><summary>2.3 Talent Assessment &amp; Competency-Based Interviewing</summary><div class="body">
+  <ul><li><b>BEI:</b> past behaviour is the best predictor of future performance.</li><li><b>STAR / SOAR:</b> Situation/Obstacle → Task/Action → Result. Separate "I" from "We"; quantify results.</li><li><b>Psychometrics &amp; skill tests:</b> coding tests, case studies, personality inventories (Hogan, OPQ, Saville) for cognitive agility and leadership potential.</li></ul>
+  <div class="tip"><b>Add-on:</b> Structured interviews with a common scorecard and rating anchors beat unstructured ones for validity and bias reduction.</div>
+ </div></details>
+
+ <details><summary>2.4 Offer Management, Compensation &amp; Post-Offer Engagement</summary><div class="body">
+  <ul><li><b>Structure:</b> fixed vs variable (performance-linked incentive), joining bonus (with clawback), relocation, notice-period buyout.</li><li><b>Compa-ratio</b> = (Proposed fixed salary ÷ Pay-band midpoint) × 100. 80–120% is standard; above 100% needs justification (niche skill, competing offers, immediate joiner) to protect internal equity.</li><li><b>Drop-off mitigation:</b> with 60–90 day notice periods, ghosting and offer-shopping are major risks. Use bi-weekly touchpoints, a buddy/HM connect, newsletters, and watch red flags such as reluctance to share a resignation acceptance.</li></ul>
+ </div></details>
+
+ <details><summary>2.5 Campus Recruitment (University Relations)</summary><div class="body">
+  <ul><li><b>Employer branding:</b> case competitions (e.g. Deloitte Maverick), Partner guest lectures, live projects, social campaigns.</li><li><b>Day-Zero / Slot-Zero:</b> compete at premier campuses; use PPOs from summer internships to reduce final-placement pressure.</li></ul>
+  <div class="tip"><b>Add-on lifecycle:</b> campus mapping → pre-placement talk → test/case round → GD/PI → offers → pre-joining engagement → onboarding → first-year tracking.</div>
+ </div></details>
+
+ <details><summary>2.6 HR Technology &amp; AI in TA</summary><div class="body">
+  <ul><li><b>ATS/CRM:</b> Workday Recruiting, SAP SuccessFactors, Avature, Eightfold.ai, Phenom.</li><li><b>GenAI in TA:</b> JD calibration, resume parsing and skill matching, interview scheduling, predictive attrition modelling.</li><li><b>Ethical AI &amp; bias:</b> make sure tools don't penalise career breaks (e.g. maternity returnees) or non-traditional education. Keep humans in the loop, audit models regularly, and keep decisions explainable.</li></ul>
+ </div></details>
+
+ <details><summary>2.7 Add-on: Compliance, BGV &amp; Labour Codes (India)</summary><div class="body">
+  <ul><li><b>Four Labour Codes:</b> Wages, Industrial Relations, Social Security, Occupational Safety, Health &amp; Working Conditions (OSHWC). Be aware of fixed-term employment and gig/platform worker definitions.</li><li><b>BGV:</b> education, employment, address, criminal/court checks; conflicts and discrepancies must be escalated and handled consistently.</li><li><b>Data privacy:</b> candidate data handled under applicable data-protection law (India's DPDP Act) and firm policy.</li></ul>
+  <div class="tip">Keep this high-level; confirm current rollout status of the Labour Codes before citing specifics.</div>
+ </div></details>
+</section>
+
+<section id="m3">
+ <h2>Module 3 · TA Metrics &amp; Analytics</h2>
+ <p class="sub">Memorise definitions, formulas and levers. Try the calculators below.</p>
+ <div class="tblwrap"><table>
+ <tr><th>Metric</th><th>Formula</th><th>Measures</th><th>How to improve</th></tr>
+ <tr><td><b>Time to Fill</b></td><td>Offer accepted date − Requisition approved date</td><td>End-to-end TA efficiency</td><td>Pre-built pipelines, crisp intake, pre-vetted pools</td></tr>
+ <tr><td><b>Time to Hire</b></td><td>Offer accepted date − Candidate entered pipeline</td><td>Speed of selection once identified</td><td>48-hr screening SLA; block panel calendars / weekend drives</td></tr>
+ <tr><td><b>Cost per Hire</b></td><td>(Internal + External costs) ÷ Total hires</td><td>Financial efficiency</td><td>Cut agency dependence; boost referrals &amp; direct sourcing</td></tr>
+ <tr><td><b>Quality of Hire</b></td><td>(1st-yr performance rating + HM satisfaction + 1-yr retention %) ÷ 3 (normalise to the same scale)</td><td>Long-term value &amp; fit</td><td>Structured rubrics; train managers on bias</td></tr>
+ <tr><td><b>Offer-to-Join Ratio</b></td><td>(Joined ÷ Offers released) × 100</td><td>Offer competitiveness &amp; post-offer engagement</td><td>Qualify motivation early; audit competing offers; warm-up touchpoints</td></tr>
+ <tr><td><b>Source Yield / Funnel Conversion</b></td><td>(Stage N+1 count ÷ Stage N count) × 100</td><td>Channel effectiveness &amp; screening accuracy</td><td>Recalibrate keywords with HM if CV-to-shortlist falls below 30%</td></tr>
+ <tr><td><b>First-Year Attrition</b></td><td>(Leavers within 12 months ÷ New hires) × 100</td><td>Expectation vs reality alignment</td><td>Realistic Job Previews; 30-60-90 day check-ins</td></tr>
+ <tr><td><b>Add-on: Offer Acceptance Rate</b></td><td>(Offers accepted ÷ Offers made) × 100</td><td>Offer appeal at decision point</td><td>Market-benchmarked pay, speed, HM close calls</td></tr>
+ <tr><td><b>Add-on: Diversity Funnel Ratio</b></td><td>Group share at each stage ÷ share at previous stage</td><td>Where diverse candidates drop</td><td>Debias screening; diverse panels; targeted sourcing</td></tr>
+ </table></div>
+ <h3>Interactive calculators</h3>
+ <div class="grid">
+  <div class="card calc"><b>Compa-Ratio</b>
+   <label>Proposed fixed salary (₹ LPA)</label><input type="number" id="c1" value="22">
+   <label>Pay-band midpoint (₹ LPA)</label><input type="number" id="c2" value="20">
+   <div class="res" id="cr"></div></div>
+  <div class="card calc"><b>Offer-to-Join &amp; Attrition</b>
+   <label>Offers released</label><input type="number" id="o1" value="50">
+   <label>Joined</label><input type="number" id="o2" value="38">
+   <label>New hires in period / leavers in 12 months</label><input type="number" id="o3" value="38"><input type="number" id="o4" value="5" style="margin-top:6px">
+   <div class="res" id="or"></div></div>
+  <div class="card calc"><b>Funnel Conversion</b>
+   <label>CVs shared</label><input type="number" id="f1" value="200">
+   <label>Shortlisted</label><input type="number" id="f2" value="20">
+   <label>Cleared interviews</label><input type="number" id="f3" value="10">
+   <label>Offers accepted</label><input type="number" id="f4" value="2">
+   <div class="res" id="fr"></div></div>
+ </div>
+ <h3>Add-on: Worked example (Cost per Hire)</h3>
+ <div class="card">Internal costs ₹12L (recruiter salaries, tools, events) + external ₹18L (agency fees, job boards) = ₹30L. 40 hires → <b>CPH = ₹75,000</b>. Lever: shift 10 hires from agency to referral and direct sourcing to bring CPH down.</div>
+</section>
+
+<section id="m4">
+ <h2>Module 4 · Question Bank with Model Answers</h2>
+ <p class="sub">Filter by category or search. Model answers use placeholders; replace them with your own real experiences.</p>
+ <input type="search" id="qs" placeholder="Search questions or answers…">
+ <div class="chips" id="qchips"></div>
+ <div id="qlist"></div>
+</section>
+
+<section id="m5">
+ <h2>Module 5 · Case Studies &amp; Situational Scenarios</h2>
+ <p class="sub">Use the 4-step approach: <b>Clarify → Diagnose → Action Plan → Preventative Measure</b>.</p>
+ <div id="slist"></div>
+</section>
+
+<section id="m6">
+ <h2>Module 6 · Questions to Ask &amp; Pre-Interview Checklist</h2>
+ <p class="sub">Never say "I have no questions." Pick two based on who is interviewing you.</p>
+ <div class="grid">
+  <div class="card"><span class="tag">TA Manager / Senior Recruiter</span><ol>
+   <li>How is the TA team integrating AI or automation into sourcing and screening, and how has that changed the recruiter's day-to-day role?</li>
+   <li>Which KPIs separate a top-performing TA professional from an average one in the first six months?</li>
+   <li>What does a typical first 90 days look like for a new TA joiner?</li></ol></div>
+  <div class="card"><span class="tag">TA Director / Partner</span><ol>
+   <li>With demand shifting to AI and cloud, how does TA balance building talent through campuses versus buying laterally?</li>
+   <li>What is the biggest talent challenge your service line expects over the next two quarters?</li>
+   <li>How does TA partner with the business on workforce planning?</li></ol></div>
+ </div>
+ <h3>Interactive pre-interview checklist <small id="cpct" style="color:var(--mu)"></small></h3>
+ <div class="bar"><i id="cbar"></i></div>
+ <div class="card chk" id="chk"></div>
+</section>
+
+<section id="m7">
+ <h2>Module 7 · Frameworks &amp; Quick Revision</h2>
+ <div class="grid">
+  <div class="card"><span class="tag">Scenario answers</span><p><b>Clarify</b> (ask 2–3 questions) → <b>Diagnose</b> (root cause with data) → <b>Action plan</b> (immediate + short-term) → <b>Prevent</b> (process fix).</p></div>
+  <div class="card"><span class="tag">STAR+</span><p>Situation, Task, Action (your "I"), Result (numbers), plus <b>Learning</b> (what you'd do differently).</p></div>
+  <div class="card"><span class="tag">Iron Triangle</span><p>Speed, Cost, Quality: you can rarely maximise all three. Offer trade-off options with data.</p></div>
+  <div class="card"><span class="tag">Talent advisor mindset</span><p>Challenge with market data, propose options, own outcomes, don't just take orders.</p></div>
+  <div class="card"><span class="tag">Candidate experience</span><p>Fast, transparent, respectful: timely feedback, clear process, honest role preview.</p></div>
+  <div class="card"><span class="tag">Answer structure</span><p>Headline first, then 2–3 points, then an example. Aim for 90 seconds to 2 minutes.</p></div>
+ </div>
+ <h3>Flashcards (tap to flip)</h3>
+ <div class="grid" id="flash"></div>
+ <h3>Common mistakes to avoid</h3>
+ <div class="card"><ul>
+  <li>Saying "I'd just tell the manager no" instead of proposing data-backed options.</li>
+  <li>Using "we" throughout so your own contribution is unclear.</li>
+  <li>Quoting metrics you can't explain or defend.</li>
+  <li>Generic "why Deloitte" answers with no knowledge of service lines or entity.</li>
+  <li>Ignoring candidate experience, compliance and DEI in scenario answers.</li>
+ </ul></div>
+</section>
+
+<section id="m8">
+ <h2>Module 8 · 7-Day Study Plan</h2>
+ <div class="tblwrap"><table>
+ <tr><th>Day</th><th>Focus</th><th>Output</th></tr>
+ <tr><td>1</td><td>Deloitte entities, service lines, values; read recent firm news</td><td>1-page firm brief + 3 "why Deloitte" lines</td></tr>
+ <tr><td>2</td><td>TA syllabus: intake, workforce planning, sourcing, Boolean practice</td><td>3 Boolean strings written for real roles</td></tr>
+ <tr><td>3</td><td>Assessment, offer management, compensation, drop-off control</td><td>Compa-ratio and drop-off cheat sheet</td></tr>
+ <tr><td>4</td><td>Metrics: formulas, levers, mock calculations</td><td>Explain each metric aloud in 30 seconds</td></tr>
+ <tr><td>5</td><td>Behavioural questions; build 5 STAR stories</td><td>Recorded answers, then trim to 2 minutes</td></tr>
+ <tr><td>6</td><td>Scenarios and case practice with a peer</td><td>Practise Clarify → Diagnose → Act → Prevent</td></tr>
+ <tr><td>7</td><td>Full mock interview, resume defence, questions to ask</td><td>Final checklist complete</td></tr>
+ </table></div>
+</section>
+
+<footer>Prepared for MBA HR Talent Acquisition interview preparation · Verify firm-specific facts before the interview · Good luck! 🍀</footer>
+</main>
+</div>
+<button id="top" aria-label="Back to top">↑</button>
+
+<script>
+const Q=[
+// Behavioral
+{c:"Behavioral",q:"Walk me through your resume / Tell me about yourself.",as:"Communication clarity, structure, career narrative.",a:"<b>Use Present → Past → Future in ~90 seconds.</b><ul><li><b>Present:</b> “I'm an MBA in HR at [Institute], focused on talent strategy, people analytics and organisational behaviour.”</li><li><b>Past:</b> “During my internship at [Company] I redesigned the lateral sourcing funnel for tech roles, improving CV-to-shortlist conversion by [X]% by standardising intake sheets. Before my MBA I worked in [Domain], building data analysis and stakeholder skills.”</li><li><b>Future:</b> “I want to start my career in TA at Deloitte because of the scale and complexity of consulting hiring, where people are the product, and I want to combine analytical grounding with high-velocity stakeholder management.”</li></ul>"},
+{c:"Behavioral",q:"Why Talent Acquisition? Why not HRBP or Total Rewards?",as:"Genuine passion for TA vs a stepping stone.",a:"“In a professional services firm, revenue is directly tied to the quality and billability of talent. TA sits at the intersection of external market intelligence and internal business growth. I enjoy the fast-paced, target-driven nature, where I can measure impact weekly through funnel metrics, negotiation wins and time-to-fill, while advising business leaders.”<div class='tip'>Avoid putting down HRBP or Rewards. Frame it as fit, not rejection.</div>"},
+{c:"Behavioral",q:"Tell me about a time you handled a difficult stakeholder.",as:"Conflict resolution, EI, consulting poise.",a:"<ul><li><b>S:</b> Project lead insisted on 5 Tier-1 colleges only for a niche analytical role; pipeline empty for two weeks.</li><li><b>T:</b> Widen the pool without compromising quality.</li><li><b>A:</b> Pulled LinkedIn Talent Insights data: only ~120 professionals nationwide fit the criteria and most had recently switched. Proposed a pilot with Tier-2 candidates who passed a standardised technical assessment.</li><li><b>R:</b> Lead agreed to interview 5 vetted candidates; closed 2 positions in 10 days, cutting projected time-to-fill by 35%.</li></ul>"},
+{c:"Behavioral",q:"Tell me about a failure or mistake and what you learned.",as:"Accountability, learning agility, honesty.",a:"Pick a real, <b>moderate</b> mistake. Structure: what happened → your ownership (no blaming) → immediate fix → process change → result. Example: you scheduled interviews without confirming panel availability, causing 4 reschedules. You owned it with the HM, apologised to candidates, created a shared panel calendar and a 24-hr confirmation checklist; reschedules dropped to near zero the next cycle."},
+{c:"Behavioral",q:"Describe how you manage multiple competing deadlines.",as:"Prioritisation, organisation, resilience.",a:"Use a prioritisation matrix: business impact × urgency. Example: juggling 3 requisitions, I ranked by billing start date and number of open seats, set daily trackers, aligned expectations with each HM, and escalated early when trade-offs were needed. Finish with the outcome (all met / one renegotiated with consent)."},
+{c:"Behavioral",q:"Tell me about a time you led a team through ambiguity.",as:"Leadership, structure under uncertainty.",a:"Show how you (1) defined the problem, (2) split work into owners and milestones, (3) set quick feedback loops, (4) adjusted as facts emerged. Quantify the outcome and mention what the team learned."},
+{c:"Behavioral",q:"Tell me about a time you went beyond the brief.",as:"Ownership, initiative.",a:"Example: while assisting with intern hiring, you noticed 30% of drop-offs came from slow scheduling. You built a simple tracker and a 48-hr SLA with panelists, cutting time-to-hire by [X] days. Highlight that you solved the root cause, not just the task."},
+{c:"Behavioral",q:"Why Deloitte? Why now?",as:"Research depth, motivation.",a:"Combine three elements: <b>scale and variety</b> (four service lines, global work), <b>learning and TA innovation</b> (AI, analytics, talent intelligence), and <b>culture/values</b> (inclusion, collaboration, measurable impact). Name one specific recent initiative or programme you researched. Tie it to what you will contribute."},
+{c:"Behavioral",q:"Where do you see yourself in 5 years?",as:"Ambition, realism, retention.",a:"“Growing into a Talent Advisor who owns a service line's hiring strategy, perhaps leading a pod, deepening skills in talent analytics and workforce planning, while mentoring newer recruiters.” Avoid saying you'll switch to another function."},
+{c:"Behavioral",q:"What are your strengths and weaknesses?",as:"Self-awareness.",a:"Strength: structured analytical thinking plus stakeholder communication, backed by an example. Weakness: real but manageable, e.g. “I used to over-prepare before sharing drafts. I now share early versions at 70% to get feedback faster,” with evidence of improvement."},
+// Technical
+{c:"Technical TA",q:"How do you differentiate an HRBP from a Talent Acquisition Advisor?",as:"Role clarity and advisory mindset.",a:"An HRBP manages the internal employee lifecycle: performance, employee relations, retention, org design. A <b>TA Advisor</b> focuses on external and internal talent supply, labour-market intelligence, employer brand, competency assessment and closing capability gaps before they hurt delivery. The shift from “recruiter” to “advisor” means using market data to challenge unrealistic demands and guiding compensation and sourcing decisions."},
+{c:"Technical TA",q:"What is a Realistic Job Preview (RJP) and why does it matter in consulting?",as:"Retention thinking.",a:"An RJP transparently shares both attractive and challenging aspects (travel, client deadlines, time-zone overlap in USI). A rosy picture may lift offer acceptance but causes high <b>first-year attrition</b> through reality shock. RJPs align expectations early, improving retention and engagement."},
+{c:"Technical TA",q:"How do you evaluate drop-off risk during a 90-day notice period?",as:"Offer management insight.",a:"I watch five signals:<ol><li><b>Delayed resignation proof</b> (no resignation email / HRMS screenshot with confirmed LWD)</li><li><b>Communication lag</b> beyond 48 hours on check-ins or BGV documents</li><li><b>Vague counter-offer talk</b> (retention talks, onsite promises)</li><li><b>Active job-board activity</b> in the last 30 days of notice</li><li><b>Low pre-onboarding engagement</b> (skipping mixers, pending compliance tasks)</li></ol>Then I act: more frequent touchpoints, buddy/HM call, early escalation and keep a backup candidate."},
+{c:"Technical TA",q:"How do you run an effective intake call?",as:"Stakeholder management, rigor.",a:"30 minutes: (1) project context and billing timeline, (2) must-have vs good-to-have skills, (3) target companies/sources, (4) deal-breakers, (5) budget and band, (6) interview panel and SLAs, (7) agree success metrics. Share a summary in writing within 24 hours and calibrate with 5–10 sample profiles."},
+{c:"Technical TA",q:"What is structured interviewing and why use it?",as:"Assessment science.",a:"Same competency-based questions, rating anchors and scorecard for every candidate for the role. It improves predictive validity, consistency and legal defensibility, and reduces unconscious bias and halo effects."},
+{c:"Technical TA",q:"How would you build a sourcing strategy for a niche role?",as:"Sourcing depth.",a:"1) Define the profile and adjacent skills. 2) Map talent: companies, communities, geographies. 3) Multi-channel: LinkedIn Recruiter, X-Ray/Boolean, GitHub/Kaggle, referrals, alumni, communities. 4) Personalised outreach and track response rates. 5) Pipeline nurturing via CRM. 6) Review weekly funnel data and refine."},
+{c:"Technical TA",q:"Employee referrals vs agencies: how do you decide?",as:"Cost and quality judgement.",a:"Referrals typically give lower cost, faster closure and better retention, so push them first with incentives and campaigns. Agencies suit urgent niche or senior roles where internal reach is limited; control with SLAs, preferred-vendor panels and a success-fee structure."},
+// Metrics
+{c:"Metrics & Analytics",q:"Difference between Time to Fill and Time to Hire?",as:"Metric clarity.",a:"<b>TTF</b> = offer accepted − requisition approved (measures TA end-to-end efficiency). <b>TTH</b> = offer accepted − candidate entered pipeline (measures selection speed once a candidate is identified). TTF includes sourcing lag; TTH starts at the candidate."},
+{c:"Metrics & Analytics",q:"Your offer-to-join ratio is only 65%. What do you do?",as:"Diagnosis and action.",a:"<b>Diagnose:</b> segment by role, source, notice period and pay position; run decline/drop-off calls. <b>Act:</b> structured pre-onboarding, faster offer turnaround, early counter-offer discussion, buddy programme, HM close calls. <b>Prevent:</b> qualify motivation in screening and check compa-ratio vs market. Track weekly until it recovers."},
+{c:"Metrics & Analytics",q:"How do you measure Quality of Hire?",as:"Analytical rigour.",a:"Blend first-year performance rating, HM satisfaction and 1-year retention (normalised), optionally ramp-up time and promotion velocity. Feed the results back into sourcing channel and assessment calibration."},
+{c:"Metrics & Analytics",q:"CV-to-shortlist conversion is 10%. What's wrong?",as:"Funnel diagnosis.",a:"Likely a misalignment between my understanding and the HM's expectation. Run a 20-minute live resume calibration on 10 profiles, refine the Boolean/keywords, update the intake sheet and re-measure. Benchmark in your guide is 35–50%, with action required below ~30%."},
+{c:"Metrics & Analytics",q:"How would you prove TA's ROI to a Partner?",as:"Business partnering.",a:"Translate metrics to business language: revenue unlocked by faster deployment (billable days saved), cost savings from reduced agency spend, quality of hire, retention savings. Present a concise dashboard with trends and actions."},
+// Compensation
+{c:"Compensation & Offers",q:"What is compa-ratio and how do you use it?",as:"Compensation fundamentals.",a:"Compa-ratio = proposed fixed salary ÷ pay-band midpoint × 100. 80–120% is standard; above 100% needs justification (niche skill, competing offers, immediate joiner) to protect internal equity. Example: ₹22L vs ₹20L midpoint = 110%."},
+{c:"Compensation & Offers",q:"A candidate demands 40% hike, above band. How do you respond?",as:"Negotiation, judgement.",a:"Clarify expectations and drivers; benchmark market and internal peers; show total value (variable, learning, brand, growth); explore non-fixed levers (joining bonus with clawback, early review, notice buyout) within policy; seek approvals with justification if the skill is rare; be transparent if the answer is no."},
+{c:"Compensation & Offers",q:"When would you use a joining bonus or notice-period buyout?",as:"Tool selection.",a:"Joining bonus: bridge pay gap or lost variable, with clawback. Notice buyout: urgent billing need when candidate has long notice. Use sparingly, with approvals and parity checks."},
+// Campus
+{c:"Campus Hiring",q:"How would you build employer brand on campus?",as:"University relations.",a:"Case competitions (e.g. Maverick), Partner guest lectures, live projects, alumni ambassadors, social campaigns, pre-placement talks. Measure with applications, test clearance, offer acceptance and campus-wise retention."},
+{c:"Campus Hiring",q:"What is Day-Zero strategy and its risks?",as:"Campus strategy.",a:"Competing in the first slot at premier campuses to lock top talent, supported by PPOs from internships. Risks: higher cost, offer rejections if better opportunities appear, and pressure to hire before full evaluation. Mitigate with engagement plans and strong internship experiences."},
+// Tech & AI
+{c:"HR Tech & AI",q:"How would you use GenAI in recruitment responsibly?",as:"Tech and ethics.",a:"Use for JD calibration, summarising profiles, scheduling, and outreach drafts. Guardrails: human decision-making, regular bias audits, no penalty for career breaks, explainability, privacy compliance, and candidate transparency."},
+{c:"HR Tech & AI",q:"What are the risks of algorithmic bias in screening?",as:"Ethical awareness.",a:"Models trained on past hires replicate historical bias (gender, college tier, gaps). Mitigate with diverse training data, blind screening, fairness metrics by group, periodic audits and human review of rejections."},
+// DEI
+{c:"DEI & Ethics",q:"How do you balance diversity goals with meritocracy?",as:"Inclusion thinking.",a:"DEI works at the <b>top of the funnel</b> (sourcing/shortlist), not by lowering the selection bar. Use balanced shortlists, inclusive JDs, diverse panels, structured scorecards, returnee programmes. Same bar for everyone."},
+{c:"DEI & Ethics",q:"A hiring manager asks you to skip BGV for a star candidate. What do you do?",as:"Integrity.",a:"Politely decline: BGV is a firm-wide compliance requirement. Offer to expedite via vendor, prioritise documents and explain the risk. If pressure persists, escalate to TA leadership/compliance. Integrity over speed."}
+];
+const S=[
+{t:"Last-Minute Offer Decline (Counter-Offer)",p:"A niche Cyber Risk Senior Consultant is due to join on Monday. On Friday 5 PM they email declining because their employer matched compensation and promoted them.",s:["<b>Immediate (within 1 hour):</b> Don't reply by email; call with empathy and curiosity. Acknowledge being counter-offered shows their value.","<b>Uncover motivation:</b> Revisit non-monetary push factors from screening (global exposure, stack, culture). Ask: “Has the reason you wanted to leave truly changed, or has it been masked by a pay bump?”","<b>Involve leadership:</b> Arrange a 15-minute call with the Hiring Director/Partner on career path and client exposure.","<b>Plan B:</b> Notify HM and RMG of the risk; reach out to the #2 silver-medalist or check bench availability so billing isn't stalled.","<b>Prevent:</b> Discuss counter-offer risk during screening; keep regular touchpoints in notice period."]},
+{t:"Unrealistic Hiring Manager (“Purple Squirrel”)",p:"A Practice Director wants 10 GenAI Architects in 3 weeks, only from Big 4, 15-day notice, 20% below market.",s:["<b>Never say no without data:</b> Propose a 48-hour market-mapping sprint and reconvene.","<b>Iron Triangle brief:</b> 1-page Talent Market Intelligence: addressable pool, notice periods (typically 60–90 days), salary bands from offers/declines.","<b>Option A (speed + skill):</b> Target people already serving notice or from product/tier-2 firms; use notice buyout or joining bonus to bridge the 20% gap.","<b>Option B (budget):</b> Hire strong senior consultants with ~70% skills and upskill over 4 weeks.","<b>Option C (process):</b> Saturday mega-drive to cut interview turnaround from 2 weeks to 1 day.","<b>Close:</b> Get the Director to choose a trade-off in writing and set weekly checkpoints."]},
+{t:"High Funnel Drop-Off Diagnostics",p:"Cloud Engineering drive: 200 CVs shared, 20 shortlisted, 10 cleared Technical Round 1, 8 rejected offers.",s:["<b>CV → Shortlist (10%, benchmark 35–50%):</b> Misaligned understanding. Hold a 20-minute live resume calibration with the HM on 10 resumes.","<b>Offer rejections (80%):</b> Run rapid decline calls. Check compensation vs market median, interview process length and expectation clarity (hybrid/onsite).","<b>Offer shopping:</b> Probe candidates using the offer for counter-offers; improve qualification.","<b>Preventive:</b> Weekly funnel dashboard, SLA on feedback, early compensation alignment."]},
+{t:"DEI Hiring vs Meritocracy",p:"Mandate to raise women's representation in leadership tech roles by 30% this quarter. The HM says it will lower the technical bar.",s:["<b>Reframe:</b> DEI happens at the top of the funnel (sourcing), not at the final selection bar.","<b>Audit funnel:</b> Commit to a 50% gender-balanced shortlist via women-in-tech networks, returnee programmes (e.g. Encore) and targeted Boolean; remove gender-coded JD language.","<b>Structural debiasing:</b> Diverse panels and a standard objective scorecard.","<b>Report:</b> Track diversity funnel ratios stage by stage and share with the HM."]},
+{t:"Add-on · BGV Discrepancy After Offer",p:"BGV shows a candidate's stated tenure at a previous employer is 5 months shorter than on the resume. Joining date is in a week.",s:["<b>Clarify:</b> Get facts from the BGV report; don't assume fraud.","<b>Engage candidate:</b> Ask for an explanation and supporting documents (relieving letter, payslips).","<b>Apply policy consistently:</b> Escalate to BGV/compliance per firm guidelines; it's not the recruiter's call alone.","<b>Communicate:</b> Inform HM neutrally; hold the joining until clearance if policy says so.","<b>Prevent:</b> Remind candidates early about accuracy and BGV expectations."]},
+{t:"Add-on · Bulk Campus Hiring Surge",p:"The business asks for 300 analysts from campuses in 6 weeks, up from 150 planned.",s:["<b>Clarify:</b> Skills, locations, budget, joining timeline, confirm demand firmness.","<b>Diagnose capacity:</b> Campus slots, panel capacity, assessment throughput, offer budget.","<b>Plan:</b> Add Tier-2 campuses with strong test performance, virtual assessments, parallel panels, assessment-centre days, PPO conversions, waitlist pool.","<b>Control:</b> Daily dashboard of stage counts; buffer for 20–30% offer drop-off.","<b>Prevent:</b> Quarterly workforce planning with the business."]},
+{t:"Add-on · Offer Above Band for a Strong Candidate",p:"The best candidate wants ₹30L; the band midpoint is ₹22L and peers sit around ₹20–24L.",s:["<b>Clarify:</b> Why the ask: current CTC, variable, competing offers.","<b>Parity check:</b> Compa-ratio would be ~136%, outside the usual range; assess equity risk to peers.","<b>Justify:</b> Niche skill, scarcity, project criticality; get HM/leadership approval.","<b>Alternatives:</b> Joining bonus with clawback, accelerated review, role-level reconsideration.","<b>Decide:</b> If not approvable, be transparent and keep the candidate warm."]},
+{t:"Add-on · Hiring Manager Rejects Every Profile",p:"Over two weeks, the HM rejects all 25 profiles with vague comments like “not strong enough.”",s:["<b>Clarify:</b> Request specific, criteria-based feedback.","<b>Calibrate:</b> Live resume session; use a scorecard with rated competencies.","<b>Reset intake:</b> Re-validate must-have vs good-to-have; share market data on availability.","<b>Test:</b> Present 3 profiles of different types for explicit preference signals.","<b>Escalate (if needed):</b> Involve TA lead / business head with funnel data."]}
+];
+const FL=[["Time to Fill","Offer accepted − requisition approved"],["Time to Hire","Offer accepted − candidate entered pipeline"],["Offer-to-Join","Joined ÷ offers × 100"],["Compa-Ratio","Proposed fixed ÷ band midpoint × 100 (80–120%)"],["Infant Mortality","Leavers within 12 months ÷ new hires × 100"],["STAR","Situation, Task, Action, Result"],["Buy / Build / Borrow","Lateral / Campus + upskill / Contingent + bench"],["DEI principle","Diversify the top of funnel; keep the same final bar"]];
+const CK=["Resume mastery: can defend every number and project","5 STAR stories ready (stakeholder, deadlines, failure, ambiguity, beyond-the-brief)","Know the entity (DI vs USI) and service line for the role","Memorised metrics formulas and levers","Practised 2 Boolean strings + 1 X-Ray string","Prepared 3 scenario answers using Clarify → Diagnose → Action → Prevent","Reviewed DEI, ethical AI and BGV integrity answers","Researched recent Deloitte news and a specific initiative","Prepared 2 questions to ask the interviewer","Awareness of the four Indian Labour Codes","Tested video/audio setup or planned route and documents","Mock interview completed with feedback"];
+
+const $=s=>document.querySelector(s);
+let cat="All";
+function renderQ(){
+ const t=$("#qs").value.toLowerCase();
+ const list=Q.filter(x=>(cat=="All"||x.c==cat)&&(x.q+x.a).toLowerCase().includes(t));
+ $("#qlist").innerHTML=list.length?list.map((x,i)=>`<details><summary><span><span class="tag">${x.c}</span> ${x.q}</span></summary><div class="body"><div class="assess"><b>What they assess:</b> ${x.as}</div>${x.a}</div></details>`).join(""):"<p>No matching questions.</p>";
+}
+const cats=["All",...new Set(Q.map(x=>x.c))];
+$("#qchips").innerHTML=cats.map(c=>`<button class="chip ${c=="All"?"on":""}" data-c="${c}">${c}</button>`).join("");
+$("#qchips").onclick=e=>{if(e.target.dataset.c){cat=e.target.dataset.c;document.querySelectorAll(".chip").forEach(b=>b.classList.toggle("on",b.dataset.c==cat));renderQ()}};
+$("#qs").oninput=renderQ;renderQ();
+$("#slist").innerHTML=S.map((x,i)=>`<details ${i==0?"open":""}><summary><span><span class="tag o">Scenario ${i+1}</span> ${x.t}</span></summary><div class="body"><div class="assess"><b>Prompt:</b> <i>${x.p}</i></div><ol class="steps">${x.s.map(s=>`<li>${s}</li>`).join("")}</ol></div></details>`).join("");
+$("#qc").textContent=Q.length;$("#sc").textContent=S.length;
+// flashcards
+$("#flash").innerHTML=FL.map(f=>`<div class="card flip" style="cursor:pointer;text-align:center;min-height:90px;display:grid;place-items:center" data-a="${f[1]}" data-q="${f[0]}"><b>${f[0]}</b></div>`).join("");
+$("#flash").onclick=e=>{const c=e.target.closest(".flip");if(!c)return;const s=c.dataset.s=c.dataset.s?"":"1";c.innerHTML=s?`<span>${c.dataset.a}</span>`:`<b>${c.dataset.q}</b>`;c.style.background=s?"var(--hl)":""};
+// checklist
+let saved={};try{saved=JSON.parse(localStorage.getItem("dtaChk")||"{}")}catch(e){}
+$("#chk").innerHTML=CK.map((c,i)=>`<label><input type="checkbox" data-i="${i}" ${saved[i]?"checked":""}><span>${c}</span></label>`).join("");
+function upd(){const n=document.querySelectorAll("#chk input:checked").length;const p=Math.round(n/CK.length*100);$("#cbar").style.width=p+"%";$("#cpct").textContent=`(${n}/${CK.length} · ${p}%)`}
+$("#chk").onchange=e=>{saved[e.target.dataset.i]=e.target.checked;try{localStorage.setItem("dtaChk",JSON.stringify(saved))}catch(x){}upd()};upd();
+// calculators
+const n=id=>parseFloat($(id).value)||0;
+function calc(){
+ const cr=n("#c2")?n("#c1")/n("#c2")*100:0;
+ $("#cr").innerHTML=`Compa-ratio: ${cr.toFixed(1)}% → ${cr<80?"Below band: risk of under-pay":cr<=100?"Within standard range":cr<=120?"Above midpoint: needs justification":"Outside standard range: needs strong approval"}`;
+ const oj=n("#o1")?n("#o2")/n("#o1")*100:0,at=n("#o3")?n("#o4")/n("#o3")*100:0;
+ $("#or").innerHTML=`Offer-to-join: ${oj.toFixed(1)}%<br>First-year attrition: ${at.toFixed(1)}%`;
+ const a=n("#f1"),b=n("#f2"),c=n("#f3"),d=n("#f4"),p=(x,y)=>y?(x/y*100).toFixed(1)+"%":"–";
+ $("#fr").innerHTML=`CV→Shortlist: ${p(b,a)}${a&&b/a<.3?" ⚠ below 30%":""}<br>Shortlist→Cleared: ${p(c,b)}<br>Cleared→Accepted: ${p(d,c)}<br>Overall: ${p(d,a)}`;
+}
+document.querySelectorAll(".calc input").forEach(i=>i.oninput=calc);calc();
+// ui
+const root=document.documentElement;
+try{const t=localStorage.getItem("dtaTheme");if(t)root.dataset.theme=t}catch(e){}
+$("#theme").onclick=()=>{const t=root.dataset.theme=="dark"?"light":"dark";root.dataset.theme=t;try{localStorage.setItem("dtaTheme",t)}catch(e){}};
+$("#menuBtn").onclick=()=>$("#side").classList.toggle("open");
+$("#side").onclick=e=>{if(e.target.tagName=="A")$("#side").classList.remove("open")};
+$("#top").onclick=()=>scrollTo({top:0,behavior:"smooth"});
+const links=[...document.querySelectorAll("#side a")],secs=links.map(a=>document.querySelector(a.getAttribute("href")));
+addEventListener("scroll",()=>{
+ const h=document.documentElement,st=h.scrollTop;
+ $("#prog").style.width=(st/(h.scrollHeight-h.clientHeight)*100)+"%";
+ $("#top").style.display=st>500?"block":"none";
+ let k=0;secs.forEach((s,i)=>{if(s.getBoundingClientRect().top<120)k=i});
+ links.forEach((l,i)=>l.classList.toggle("on",i==k));
+});
+</script>
+</body>
+</html>
